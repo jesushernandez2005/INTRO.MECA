@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header style="background-color: #007bff; padding: 1rem 0; margin-top: 1.5rem;">
+                <div class="container" style="padding-left: 1.25rem; padding-right: 1.25rem;">
+                    <div class="row" style="gap: 1.25rem; display: flex; align-items: center; justify-content: center;">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal" style="color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Arduino Básico: Salidas digitales</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/chuy.jpg" alt="..." />
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/yael.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Jesús León Hernández Martínez<br>Yael Alejandro Vázquez García</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Agosto 30, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none text-white">Salidas digitales</a>
+                        <a class="badge bg-primary text-decoration-none text-white">Arduino Uno</a>
+
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/arduino.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Arduino se utiliza para desarrollar prototipos, controlar dispositivos como luces y motores, y crear sistemas interactivos. Es especialmente popular en el ámbito educativo, ya que permite a estudiantes y entusiastas aprender sobre programación y electrónica de manera práctica. Además, se puede emplear en proyectos de Internet de las Cosas (IoT), conectando dispositivos a la red para recopilar y compartir datos.</p>
+
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta práctica veremos las funciones básicas de arduino,  es una plataforma de hardware y software de código abierto que facilita la creación de proyectos electrónicos. Se compone de una placa de circuito impreso programable y un entorno de desarrollo (IDE) que permite escribir y cargar código, el objetivo de esta práctica es conocer las funciones basicas, por medio del código y salidas.
+                            
+                            </p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-2 Resistencias de 1000</p>
+                        <p class="fs-6 mb-4">-Arduino UNO</p>
+                        <p class="fs-6 mb-4">-Cable conector tipo B y USB</p>
+                        <p class="fs-6 mb-4">-Display de 7 segmentos</p>
+                        <p class="fs-6 mb-4">-Leds / Diodos</p>
+                        <p class="fs-6 mb-4">-Resistencias de 220Ω</p>
+                        <p class="fs-6 mb-4">-Protoboard</p>
+                        <p class="fs-6 mb-4">-Cable Jumpers</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 1 y 4-</h2>
+                        <p class="fs-6 mb-4">Este proyecto consiste en encender y apagar un LED a intervalos regulares, lo que permite entender conceptos básicos de programación y electrónica. <br>
+                        </p>                        </p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Para comprender mejor, la placa fisica de Arduino UNO, son múltiples cicuitos integrados que permite que sea programable, empesaremos con un ejercicio básico,comúnmente conocido como "Blink", es una de las primeras experiencias que muchos entusiastas de la electrónica y programación realizan con Arduino.<br>
+                            Primero, es esencial preparar el entorno de trabajo. Para ello, se debe instalar el software de Arduino en una computadora. Este software proporciona un entorno de desarrollo donde se pueden escribir, compilar y cargar programas a la placa Arduino. Al abrir el IDE de Arduino, los usuarios se familiarizan con la interfaz, que incluye áreas para escribir código y herramientas para cargar programas a la placa.<br>
+                            A continuación, se procede a la conexión del hardware. En este paso, se necesita un LED, una resistencia y la placa Arduino. Se comienza conectando el ánodo del LED a uno de los pines digitales de la placa, como el pin 13, y el cátodo a una resistencia, que a su vez se conecta a tierra (GND). Esta configuración es crucial, ya que la resistencia limita la corriente que pasa a través del LED, protegiéndolo de daños. Es fundamental verificar que todas las conexiones sean correctas y estén firmes para evitar problemas durante la ejecución del programa.
+
+Una vez completada la conexión del hardware, se procede a configurar el programa. <br>
+Se abre un nuevo proyecto en el IDE de Arduino, donde se define el pin que se utilizará para el LED. <br>
+En la sección de configuración, se debe establecer este pin como salida. Este paso es esencial, ya que indica al Arduino que controlará un dispositivo externo, en este caso, el LED.
+
+La siguiente fase implica escribir la lógica que permitirá que el LED parpadee.<br> 
+En el bucle principal del programa, se deben definir las instrucciones para encender y apagar el LED.<br>
+Aquí es donde se decide cuánto tiempo debe permanecer encendido y apagado, utilizando funciones que permiten hacer pausas en el código. Esta alternancia entre encender y apagar el LED es lo que genera el efecto de parpadeo, y es fundamental entender cómo funcionan los ciclos de tiempo en programación.
+
+Una vez escrito el código, el siguiente paso es cargarlo en la placa Arduino. <br>
+Para ello, se conecta la placa a la computadora mediante un cable USB y se selecciona el tipo de placa y el puerto correspondiente en el IDE. Luego, se utiliza la función de carga para transferir el programa a la placa. Es importante observar el proceso de carga, ya que cualquier error puede impedir que el LED parpadee correctamente.
+
+Finalmente, se verifica el funcionamiento del proyecto. Al observar el LED, debe comenzar a parpadear según el intervalo de tiempo que se estableció en el programa. <br>
+Si no ocurre así, es esencial revisar las conexiones y el código para identificar posibles errores. Una vez que el LED funcione correctamente, se puede experimentar con diferentes intervalos de tiempo, lo que permite a los usuarios entender mejor cómo ajustar el comportamiento de los componentes electrónicos.
+                        </p>                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/blinkercodi.png" alt="..." /></figure>
+                            
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Para realizar la simulación de nuestro circuito el docente nos presento la aplicación de "Tinkercad", la cuál es una gran opción para realizar pruebas de distintos tipos de circuitos, puesto que cuenta con varias herremientas y componentes los cuales facilitan el aprendizaje.</p>
+                            <p class="fs-6 mb-4">Una vez que creamos nuestra cuenta en la aplicación, empezamos inmediatamente en indigar en el funcionamiento de la interfaz de la misma para facilitar el armado de nuestro circuito.
+                            <p class="fs-6 mb-4">  
+                            </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/blinkerar.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/blinkerled.png" alt="..." /></figure>
+                              
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Para esta primera practrica no tendremos construcción ya que se puede visualizar desde la placa arduino o simplemente conectano el led al puerto 13 y la otra pata a GND
+                            </p>
+                          
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/blinkvid.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión podemos ver que gracias a la programación el led se apaga y se prende.</p>
+                        
+
+
+
+
+
+
+
+
+
+
+                        <p id="desarrollo">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 2 y 3-</h2>
+                            <p class="fs-6 mb-4">En este ejercicio vamos a ver la capacidad que tiene de que sus salidas de estar encendidas o apagadas. <br>
+                            </p>                        </p>
+                            
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                            <p class="fs-6 mb-4">En este ejercicio vamos a descubrir las salidas del Arduino UNO.<br>
+                                Las salidas URDUINO UNO pueden ser configurados a dos condiciones "HIGH", para cuando la salida expulsa un voltaje constante y "LOW", cuando la salida no expulsa voltaje, esto se puede configurar desde la plataforma de ARDUINO,
+                                primero tenemos que asignar una variable a un PIN, todo esto dentro de void setup, que es la configuración del programa, después en void loop, que es la parte de "void loop", la parte que se repite constante, les asignamos su salida, por la naturaleza de la practica no hay ninguna demostración visual más que el código.
+                            </p>                        </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/low.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/high.png" alt="..." /></figure> 
+                               
+                           
+                            <p id="resultados">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                            <p class="fs-6 mb-4"></p> No se puede fisicamente pero al momento de programar uno de los pines del ARDUINO UNO en HIGH, la salida estará expulsando un voltaje estable constantemente y cuando este programada en LOW la salida no expulsará ningún voltaje. 
+                            <p class="fs-6 mb-4"></p>
+                            
+                       
+    
+                            <p id="conclusiones">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                            <p class="fs-6 mb-4">La placa ARDUINO UNO se puede utilizar para como una opción para programar y dar vida a nuestros circuitos por medio de salidas programables.</p>
+                            
+
+
+
+                            
+
+                                           
+
+
+
+
+
+
+
+                        
+
+
+
+                            <p id="desarrollo">
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 5-</h2>
+                                <p class="fs-6 mb-4"></p>Led que parpadea y tiene una resistencia <br>
+                                </p>                        </p>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                            <p class="fs-6 mb-4">Para esta practica usaremos el mismo código de la practica 1 y 2, ya que es exactamente lo mismo, lo único que cambiaremos será la forma de conectar el circuito, usaremos la protoboards conectaremos el pin 13 a uno de los lados del protoboard inmediatamente conectar en la misma columna una resistencia de 220Ω a la paqtita positiva del led y después a la patita negativa a GND.<br>
+                                Las salidas URDUINO UNO pueden ser configurados a dos condiciones "HIGH", para cuando la salida expulsa un voltaje constante y "LOW", cuando la salida no expulsa voltaje, esto se puede configurar desde la plataforma de ARDUINO,
+                                primero tenemos que asignar una variable a un PIN, todo esto dentro de void setup, que es la configuración del programa, después en void loop, que es la parte de "void loop", la parte que se repite constante, les asignamos su salida, por la naturaleza de la practica no hay ninguna demostración visual más que el código.
+                            </p>                        </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/protoledblinker.png" alt="..." /></figure> 
+                            <p id="resultados">
+                                 <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/protoledblinker.png" alt="..." /></figure> 
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                <figure class="mb-4" align="center"><video width="80%"  controls>
+                                    <source src="video/ledblinker.mp4" type="video/mp4">
+                                </video></p></figure>
+                                <p class="fs-6 mb-4"></p> El led se prende y apaga de la forma esperada, se prende y se apaga. 
+                                <p class="fs-6 mb-4"></p>
+                           
+        
+
+    
+
+
+
+
+
+
+
+
+
+                                <p id="desarrollo">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 6 y 7-</h2>
+                                    <p class="fs-6 mb-4"></p>Dos leds blinkers en serie  <br>
+                                    </p>                        </p>
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                                <p class="fs-6 mb-4">Para esta practica usaremos el mismo código de la practica 5, ya que es exactamente lo mismo, lo único que cambiaremos será la forma de conectar el circuito, usaremos la protoboards conectaremos el pin 13 a uno de los lados del protoboard inmediatamente conectar en la misma columna una resistencia de 220Ω a la paqtita positiva del led y después a la patita negativa a GND.<br>
+                                    Las salidas URDUINO UNO pueden ser configurados a dos condiciones "HIGH", para cuando la salida expulsa un voltaje constante y "LOW", cuando la salida no expulsa voltaje, esto se puede configurar desde la plataforma de ARDUINO,
+                                    primero tenemos que asignar una variable a un PIN, todo esto dentro de void setup, que es la configuración del programa, después en void loop, que es la parte de "void loop", la parte que se repite constante, les asignamos su salida, por la naturaleza de la practica no hay ninguna demostración visual más que el código.
+                                </p>                        </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/dosleds.png" alt="..." /></figure> 
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigodosleds.png" alt="..." /></figure> 
+                                <p id="resultados">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                    <p class="fs-6 mb-4"></p> El led se prende y apaga de la forma esperada, se prende y se apaga. 
+                                    <p class="fs-6 mb-4"></p>
+                                
+
+
+
+
+
+
+
+
+
+
+                                
+                                <p id="desarrollo">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 9 y 10-</h2>
+                                    <p class="fs-6 mb-4"></p>Display 7 segmentos <br> EN esta sección tendremos la iluminación del display, en una practica se iluminará un guión y un punto y en la otra practica de iluminará del 0 al 2
+                                    </p>                  </p>
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                                <p class="fs-6 mb-4">
+                                </p>   Para esta practica conectaremos los puertos 13,12,11,10,7,8,5,4 del arduino a los pines del display como se puede ver en la imagen adjunta al igual que en tu resistencia de 220Ohms al lado negativo del display.
+                            <br>Para el código vamos a utilizar de las plantillas que generosamente nos dio el profe Huber, lo compilaremos y enviaremos al circuito.      </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/practica9.png" alt="..." /></figure> 
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigodisplay.png" alt="..." /></figure> 
+                                <p id="resultados">                                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                    <p class="fs-6 mb-4"></p> El led se prende y apaga de la forma esperada, se prende y se apaga. 
+                                    <p class="fs-6 mb-4"></p>
+                                <figure class="mb-4" align="center"><video width="80%"  controls>
+                                    <source src="video/display02.mp4" type="video/mp4">
+                                </video></p></figure>
+    
+    
+
+
+
+
+
+
+
+
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento csv: <a href="files/bom.csv">componentes.csv</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/arduinosalidas.ino">codigo.ino</a> </p>
+
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
