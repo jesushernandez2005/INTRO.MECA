@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header style="background-color: #007bff; padding: 1rem 0; margin-top: 1.5rem;">
+                <div class="container" style="padding-left: 1.25rem; padding-right: 1.25rem;">
+                    <div class="row" style="gap: 1.25rem; display: flex; align-items: center; justify-content: center;">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal" style="color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Arduino Básico: Servo Motores</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/chuy.jpg" alt="..." />
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/yael.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Jesús León Hernández Martínez<br>Yael Alejandro Vázquez García</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Agosto 30, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none text-white">Entrtadas digitales</a>
+                        <a class="badge bg-primary text-decoration-none text-white">Arduino Uno</a>
+
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/servomotorportada.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Después de ver como funciona Arduiono, pasaremos a descubrir servomotores, Un servomotor es un motor eléctrico que está diseñado para realizar un movimiento controlado y preciso. A diferencia de los motores convencionales, que operan de manera continua, los servomotores son capaces de rotar a una posición específica y mantener esa posición con gran exactitud. Este control se logra mediante un sistema de retroalimentación que incluye un encoder o potenciómetro (lo cúal vamos a revisar en estás prácticas), que permite al sistema conocer la posición actual del motor y ajustarla según sea necesario.</p>
+
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta práctica veremos las funciones básicas de los servomotores acompañado del uso del Arduino UNO, mediante la programación y conección, estás practicas se dividiran en ejercicios, cada ejercicio, se enfocará en mostrar una función nueva o concepto de los servomotores, el Arduino UNO o el código.
+                            <br>
+                            se aclara que algunas prácticas se repetiran, principalmente porque son muy identicas, hacen lo mismo pero solo se agregan elementos o pueden resumirse en solo una explicación todos sus casos.
+                            </p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-Arduino UNO</p>
+                        <p class="fs-6 mb-4">-Cable conector tipo B y USB</p>
+                        <p class="fs-6 mb-4">-Fuente de voltaje</p>
+                        <p class="fs-6 mb-4">-Pontenciómetros</p>
+                        <p class="fs-6 mb-4">-Servomotores</p>
+                        <p class="fs-6 mb-4">-Protoboard</p>
+                        <p class="fs-6 mb-4">-Cable Jumpers</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 1 y 2 -</h2>
+                        <p class="fs-6 mb-4">En estos dos proyectos empezaremos por mover un simple código un servomotor, en la práctica uno solo se movera una fracción de un giro completo y en la segunda práctica dará una vuelta completa<br>
+                           
+                        </p>                        </p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Para esta práctica comenzaremos por conectar nuestro componentes como se muestra en la imagen de abajo, primero conectaremos el pin digital 9, que puede ser modificadó su nivel de expulsión de voltaje, al cable naranja del servo motor y conectaremos GND a con el cable negro y voltaje al clave rojo.
+                            <br> Para el código utilizaremos el que aparece en la imagen agjunta, en pocas palabras declaramos que se envié un cierto voltaje al servo motor que lo hace girar a cierta distancia.
+                        </p>                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/servoejer12.png" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigoejer1.png" alt="..." /></figure>    
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigoejer2.png" alt="..." /></figure>    
+                        <p id="simulacion">
+
+                         
+
+                          
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Como podemos ver en ambos casos el servomotor se mueve la distancia indicaga</p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/servoejer1.mp4" type="video/mp4">
+               
+                        </video></p></figure>
+                        <video width="80%"  controls>
+                            <source src="video/servoejer2.mp4" type="video/mp4">
+               
+                        </video></figure>
+
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión podemos ver que gracias a la programación podemos manipular los servomotores.</p>
+                        
+
+
+
+
+
+
+
+
+
+
+                        <p id="desarrollo">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 3 y 4 -</h2>
+                            <p class="fs-6 mb-4">En este ejercicio vamos a mover servomotores por medio de medio del uso de pontenciometros. <br>
+                            </p>                        </p>
+                            
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                            <p class="fs-6 mb-4">Potenciometros y servomotores...<br>
+                                Para este nuevo ejercicio vamos a utilizar una nueva función del Arduino, vamos a usar las entradas, en la sección de "ANALOG IN", son entradas en las que se puede leer información, en este caso la resistencia que esta imponiendo el potenciometro.<br>
+Entonces para conectarlo tendremos lo usual, conectar voltajes y tierras pero aparte del pontenciometro ira conectado a un PIN analogo, el Arduino lee esa entrada y con eso podemos asignarle una salida al servomotor que en esta caso, sera la distancia que gira el servomotor.
+                            </p>                        </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/servoejer3.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Servoejer4.png" alt="..." /></figure> 
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo3.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo4.png" alt="..." /></figure> 
+                           
+                            <p id="resultados">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                            <p class="fs-6 mb-4"></p> Como se pueden ver en los videos a continuación, al mover el pontenciometro se mueven los servomotores en coordinación con este mismo. 
+                            <p class="fs-6 mb-4"></p>
+                            
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/servoejer3.mp4" type="video/mp4">
+
+                            </video></figure>
+
+    
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/servoejer4.mp4" type="video/mp4">
+
+                            </video></figure>
+
+                            <p id="conclusiones">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                            <p class="fs-6 mb-4">Esto nos abre muchas posibilidades de coordinar el movimiento de algún objeto con intervención del usuario, con esto podemos llegar a crear maquinas más complejas.</p>
+                            
+
+
+
+                            
+
+                                           
+
+
+
+
+
+
+                        
+
+
+
+                            <p id="desarrollo">
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 5 (Extensión del ejercicio 3 y 4) -</h2>
+                                <p class="fs-6 mb-4"></p>Pontenciometro extra <br>
+                                </p>                        </p>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                            <p class="fs-6 mb-4">Esta práctica es muy similar a la práctica anterior, la única diferencia es que vamos a añadir un potenciombetro de más y el cableado es exactamen igual, simplemente convectaremos otro potenciometro a una entrada analógica del Arduino y en caso del código solo añadimos otra entrada para leer. 
+                            </p>                        </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/servoejer5.png" alt="..." /></figure> 
+                            <p id="resultados">
+                                 <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo5.png" alt="..." /></figure> 
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                <figure class="mb-4" align="center"><video width="80%"  controls>
+                                    <source src="video/servoejer5.mp4" type="video/mp4">
+                                </video></p></figure>
+                                <p class="fs-6 mb-4"></p> Cada potenciometro esta ancladá a un servomotor, entonces permite al usuario tener más intervención. 
+                                <p class="fs-6 mb-4"></p>
+                           
+
+
+
+
+
+
+
+                                <p id="desarrollo">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Ejerciccio 6 -</h2>
+                                    <p class="fs-6 mb-4"></p>Servomotor potenciado por una caja de poder <br>
+                                    </p>                        </p>
+                                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                                <p class="fs-6 mb-4">Para esta última practica vamos a tener el mismo procedimiento que el procedimiento 3, solo que ahora usaremos la ayuda de un caja de poder para poder leer que corriente tiene el el potenciometro.
+
+                                </p>                        </p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/servo6.png" alt="..." /></figure> 
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo6.png" alt="..." /></figure> 
+                                <p id="resultados">
+                                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                                    <p class="fs-6 mb-4"></p> El servomotor se mueve y la consola se realiza la lectura de la corriente indicada. 
+                                    <p class="fs-6 mb-4"></p>
+                                
+
+
+
+
+
+
+                                    <figure class="mb-4" align="center"><video width="80%"  controls>
+                                        <source src="video/servoejer7.mp4" type="video/mp4">
+                                    </video></p></figure>
+
+                                    <p id="descargables">
+                                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                                        <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 1: <a href="files/p1.ino">circuito1.ino</a> </p>
+                                        <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 2: <a href="files/p2.ino">circuito2.ino</a> </p>
+                                        <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 3: <a href="files/p3.ino">circuito3.ino</a> </p>
+                                        <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 4: <a href="files/p4.ino">circuito4.ino</a> </p>
+                                        <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 5: <a href="files/p5.ino">circuito5.ino</a> </p>
+
+ 
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
