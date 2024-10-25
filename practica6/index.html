@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header style="background-color: #007bff; padding: 1rem 0; margin-top: 1.5rem;">
+                <div class="container" style="padding-left: 1.25rem; padding-right: 1.25rem;">
+                    <div class="row" style="gap: 1.25rem; display: flex; align-items: center; justify-content: center;">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal" style="color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <header class="mb-4">
+                        <h1 class="fw-bolder mb-1">Construcción de un Brazo Robótico</h1>
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/chuy.jpg" alt="..." />
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/yael.jpeg" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">Jesús León Hernández Martínez<br>Yael Alejandro Vázquez García</div>
+                            <div class="text-muted">Ing. Mecatrónica</div>
+                        </div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Octubre 25, 2024</div>
+                        <a class="badge bg-primary text-decoration-none text-white">Arduino</a>
+                        <a class="badge bg-primary text-decoration-none text-white">MDF</a>
+                        <a class="badge bg-primary text-decoration-none text-white">Servomotores</a>
+                    </header>
+                </div>
+            </section>
+
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/brazofoto.jpeg" alt="Brazo Robótico" /></figure>
+                    
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, construimos un brazo robótico utilizando MDF y servomotores. El objetivo fue diseñar un sistema que pudiera mover una pelota de un brazo a otro, controlado por un microcontrolador Arduino.</p>
+                        <p class="fs-6 mb-4">El brazo robótico fue ensamblado con piezas de MDF cortadas con precisión. Utilizamos servomotores para controlar los movimientos de cada segmento del brazo, permitiendo un rango de movimiento suficiente para realizar la tarea.</p>
+                        <p class="fs-6 mb-4">El programa cargado en el Arduino controló los servomotores a través de señales PWM, permitiendo la manipulación de la pelota con precisión.</p>
+                    </p>
+
+                    <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+                        <p class="fs-6 mb-4">- 1 Arduino Uno</p>
+                        <p class="fs-6 mb-4">- 6 Servomotores</p>
+                        <p class="fs-6 mb-4">- MDF (para la estructura del brazo)</p>
+                        <p class="fs-6 mb-4">- 1 pelota</p>
+                        <p class="fs-6 mb-4">- Cableado y conectores</p>
+                        <p class="fs-6 mb-4">- Fuente de alimentación</p>
+                    </p>
+
+                    <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+                        <p class="fs-6 mb-4">La robótica es un campo interdisciplinario que combina ingeniería mecánica, electrónica y programación. La construcción de brazos robóticos es una excelente forma de aplicar estos conocimientos en un proyecto práctico. En esta práctica, nos enfocamos en el diseño y la construcción de un brazo robótico que puede mover objetos, específicamente una pelota, entre dos posiciones. Esto nos brinda una comprensión más profunda de la interacción entre hardware y software en sistemas robóticos.</p>
+                    </p>
+
+                    <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <h1 class="fs-6 mb-4">Paso 1: Diseño y Construcción del Brazo</h1>
+                        <p class="fs-6 mb-4">Cortamos las piezas de MDF según el diseño planificado. Aseguramos que cada segmento del brazo tenga puntos de rotación para los servomotores. Las piezas fueron ensambladas utilizando tornillos y pegamento para madera.</p>
+
+                        <h1 class="fs-6 mb-4">Paso 2: Instalación de Servomotores</h1>
+                        <p class="fs-6 mb-4">Instalamos los servomotores en los puntos de rotación. Aseguramos que los motores estén correctamente alineados para permitir un movimiento suave.</p>
+
+                        <h1 class="fs-6 mb-4">Paso 3: Programación del Arduino</h1>
+                        <p class="fs-6 mb-4">El siguiente código se utiliza para controlar los servomotores y mover la pelota de un brazo a otro:</p>
+                        <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Screenshot 2024-10-25 113502.png" alt="Código Arduino" /></figure>
+                        <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Screenshot 2024-10-25 113512.png" alt="Código Arduino" /></figure>
+                        <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Screenshot 2024-10-25 113516.png" alt="Código Arduino" /></figure>
+                        <p class="fs-6 mb-4">Este código configura los pines para los servomotores y define las posiciones necesarias para mover la pelota entre los brazos.</p>
+
+                        <h1 class="fs-6 mb-4">Paso 4: Pruebas del Sistema</h1>
+                        <p class="fs-6 mb-4">Realizamos pruebas del sistema ajustando los ángulos de los servomotores para asegurar que la pelota se moviera con precisión de un brazo a otro.</p>
+                    </p>
+
+                    <figure class="mb-4" align="center"><video width="80%"  controls>
+                        <source src="video/brazo (1).mp4" type="video/mp4">
+                    </video></p></figure>
+
+                    <figure class="mb-4" align="center"><video width="80%"  controls>
+                        <source src="video/brazo1.mp4" type="video/mp4">
+                    </video></p></figure>
+
+                    <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">La construcción del brazo robótico nos permitió aplicar conceptos de mecánica, electrónica y programación en un proyecto práctico. Aprendimos sobre el ensamblaje de componentes, la importancia de la alineación en los mecanismos y la integración de hardware y software. Este proyecto también nos brindó una comprensión más profunda de los desafíos que enfrentan los ingenieros en el diseño de sistemas robóticos.</p>
+                    </p>
+
+                </div>
+            </section>
+        </main>
+
+        <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+            <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 1: <a href="files/brazochuy.ino">circuito1.ino</a> </p>
+            
+
+
+        <footer class="bg-dark text-white py-3">
+            <div class="container text-center">
+                <small>&copy; 2024 Ibero Puebla. Todos los derechos reservados.</small>
+            </div>
+        </footer>
+    </body>
+</html>
