@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header style="background-color: #007bff; padding: 1rem 0; margin-top: 1.5rem;">
+                <div class="container" style="padding-left: 1.25rem; padding-right: 1.25rem;">
+                    <div class="row" style="gap: 1.25rem; display: flex; align-items: center; justify-content: center;">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal" style="color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Control de servomotor mediante bluetooth</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/chuy.jpg" alt="..." />
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/yael.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Jesús León Hernández Martínez<br>Yael Alejandro Vázquez García</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Octubre 29, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none text-white">servomotor</a>
+                        <a class="badge bg-primary text-decoration-none text-white">bluetooth</a>
+
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/blue.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        El propósito de esta práctica es aprender a controlar un servomotor mediante una conexión Bluetooth utilizando un microcontrolador (como un Arduino) y una aplicación móvil personalizada creada en MIT App Inventor. Esta aplicación permite enviar comandos desde el teléfono al servomotor, configurando su posición de manera remota.
+                        <p class="fs-6 mb-4"></p>
+
+
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, exploraremos el control de un servomotor mediante una aplicación móvil diseñada en MIT App Inventor. Este entorno de desarrollo simplifica la creación de aplicaciones móviles al permitirnos construir interfaces y programar funciones usando bloques gráficos. Con esta aplicación, podremos enviar comandos de control al servomotor a través de un microcontrolador, como el Arduino, que estará conectado al teléfono mediante un módulo Bluetooth.
+
+                            El servomotor es ideal para esta práctica ya que permite un control preciso de su posición en distintos ángulos, lo cual es útil en aplicaciones donde se requiere movimiento limitado y controlado, como en robótica, sistemas de apertura de puertas o incluso en proyectos de automatización casera. Mediante la comunicación Bluetooth entre el Arduino y la aplicación móvil, el usuario podrá definir la posición del servomotor desde su teléfono, facilitando el control remoto del dispositivo de manera intuitiva.
+                            
+                            </p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-Microcontrolador Arduino (o similar).</p>
+                        <p class="fs-6 mb-4">-Módulo Bluetooth (como HC-05 o HC-06).</p>
+                        <p class="fs-6 mb-4">-Servomotor.</p>
+                        <p class="fs-6 mb-4">-Aplicación móvil creada en MIT App Inventor.</p>
+                        <p class="fs-6 mb-4">-Protoboard</p>
+                        <p class="fs-6 mb-4">-Cable Jumpers, Macho, hembra</p>
+                        <p class="fs-6 mb-4">-Cable Jumpers, Macho, Macho</p>
+                        
+                       
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Conexión del Servomotor: Conectamos el cable de señal del servomotor a un pin digital (por ejemplo, el pin 9) del Arduino, el cable de alimentación al pin de 5V y el cable de tierra a GND.
+                            Configuración del Módulo Bluetooth: El módulo Bluetooth se conecta al Arduino en los pines de comunicación serial (RX y TX), usando SoftwareSerial para no interferir con la comunicación USB del Arduino. Se configura a una velocidad de 9600 baudios, compatible con el módulo.<br>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/tinkerblue.jpg" alt="..." /></figure>
+                            
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/bluee.png" alt="..." /></figure>
+                           
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">Interfaz de la Aplicación: Creamos una interfaz con botones o un control deslizante (slider) que permita enviar posiciones específicas al servomotor. También añadimos el componente de conexión Bluetooth para enlazar el teléfono con el módulo Bluetooth del Arduino.
+                                </p>
+                            <p class="fs-6 mb-4">Bloques de Código: Programamos los bloques de código en MIT App Inventor para que, al presionar un botón o mover el control deslizante, se envíe el ángulo deseado en grados al módulo Bluetooth.</p>
+                            
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/appblue.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Nuestra aplicación se veria algo así.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/app1.png" alt="..." /></figure>
+
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">La aplicación móvil pudo enviar comandos específicos de posición al servomotor, y este respondió correctamente moviéndose a los ángulos solicitados (por ejemplo, 0°, 90°, 180°). Esto demuestra que la conexión Bluetooth permite una comunicación confiable y rápida con el microcontrolador.                        </p>
+
+                        <p class="fs-6 mb-4">La comunicación entre el módulo Bluetooth y la aplicación fue estable, sin desconexiones inesperadas en un rango de distancia de aproximadamente 1 a 3 metros. Esto es adecuado para aplicaciones de corto alcance en automatización doméstica o proyectos de robótica controlados a corta distancia.
+
+                        </p>
+
+
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/servo.mp4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Esta práctica permite experimentar con el control remoto de dispositivos electrónicos utilizando Bluetooth y una aplicación móvil. La integración de Arduino y MIT App Inventor nos facilita diseñar aplicaciones personalizadas, controlando hardware externo de manera sencilla y flexible.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Banzi, M., & Shiloh, M. (2014). Getting Started with Arduino (3rd ed.). O'Reilly Media.</p>
+                        <p class="fs-6 mb-4">Monk, S. (2019). Programming Arduino: Getting Started with Sketches (2nd ed.). McGraw-Hill Education.</p>
+                        <p class="fs-6 mb-4">MIT App Inventor. (2023). App Inventor: Build Apps with Ease. Massachusetts Institute of Technology. Recuperado de https://appinventor.mit.edu/</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/servobluetooth.ino.ino">codigo.ino</a> </p>
+                        
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
