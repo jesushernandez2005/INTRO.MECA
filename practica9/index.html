@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header style="background-color: #007bff; padding: 1rem 0; margin-top: 1.5rem;">
+                <div class="container" style="padding-left: 1.25rem; padding-right: 1.25rem;">
+                    <div class="row" style="gap: 1.25rem; display: flex; align-items: center; justify-content: center;">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder" style="color: white; margin-bottom: 0.5rem;">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal" style="color: rgba(255, 255, 255, 0.5); margin-bottom: 1rem;">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <header class="mb-4">
+                        <h1 class="fw-bolder mb-1">Brazo Robótico Bluetooth</h1>
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/chuy.jpg" alt="..." />
+                        <img class="img-fluid rounded-circle mb-4 px-4 d-inline-block" width="150px" src="assets/yael.jpeg" alt="..." />
+                        <div class="ms-2">
+                            <div class="fw-bold">Jesús León Hernández Martínez<br>Yael Alejandro Vázquez García</div>
+                            <div class="text-muted">Ing. Mecatrónica</div>
+                        </div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Octubre 25, 2024</div>
+                        <a class="badge bg-primary text-decoration-none text-white">Arduino</a>
+                        <a class="badge bg-primary text-decoration-none text-white">Bluetooth</a>
+                        <a class="badge bg-primary text-decoration-none text-white">Servomotores</a>
+                    </header>
+                </div>
+            </section>
+
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/brazofoto.jpeg" alt="Brazo Robótico" /></figure>
+                    
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resumen -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, se diseñó y programó una aplicación en MIT App Inventor para controlar un brazo robotizado de MDF compuesto por 5 servomotores, mediante conexión Bluetooth. La aplicación permite manipular el movimiento de cada servomotor individualmente, logrando un control preciso de las articulaciones del brazo en tiempo real. Los componentes principales incluyen el brazo MDF montado, los servomotores y un módulo Bluetooth HC-05 para la comunicación inalámbrica con el dispositivo móvil.</p>
+                    </p>
+
+                    <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+                        <p class="fs-6 mb-4">- Brazo robótico de MDF</p>
+                        <p class="fs-6 mb-4">- Servomotores</p>
+                        <p class="fs-6 mb-4">- Módulo Bluetooth HC-05</p>
+                        <p class="fs-6 mb-4">- Microcontrolador Arduino</p>
+                        <p class="fs-6 mb-4">- Batería o fuente de alimentación</p>
+                        <p class="fs-6 mb-4">- Cables de conexión</p>
+                        <p class="fs-6 mb-4">- Protoboard</p>
+                        <p class="fs-6 mb-4">- Smartphone</p>
+                    </p>
+
+                    <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+                        <p class="fs-6 mb-4">En esta práctica, se desarrollará un sistema de control para un brazo robótico de 5 grados de libertad, utilizando servomotores y comunicación Bluetooth. El objetivo es construir una interfaz de control móvil mediante una aplicación creada en MIT App Inventor, permitiendo el manejo remoto del brazo robótico a través de un dispositivo Android. Este tipo de sistema tiene aplicaciones en el ámbito de la robótica educativa y es un excelente ejemplo de cómo se puede integrar la programación, la electrónica y el diseño de interfaces móviles en un solo proyecto.</p>
+                    </p>
+
+                    <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <h1 class="fs-6 mb-4">Montaje del brazo robótico</h1>
+                        <p class="fs-6 mb-4">Conectar los servomotores a los ejes del brazo de forma segura para evitar que se suelten durante el movimiento.</p>
+                        <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/brazofoto.jpeg" alt="Código Arduino" /></figure>
+
+                        <h1 class="fs-6 mb-4">Conexión de los servomotores al Arduino</h1>
+                        <p class="fs-6 mb-4">Alimentar los servomotores desde una fuente de energía externa para evitar sobrecargar el Arduino, ya que cada servomotor puede consumir una corriente significativa al moverse. Asegúrate de conectar las tierras de la fuente de alimentación y del Arduino para mantener una referencia común.</p>
+
+                        <h1 class="fs-6 mb-4">Programación del Arduino</h1>
+                        <p class="fs-6 mb-4">Cargar un código en Arduino para recibir comandos a través del módulo Bluetooth. El código debe:
+                            <br>Configurar cada servomotor en el pin correspondiente.
+                            <br>Leer los comandos enviados por Bluetooth desde la aplicación móvil, que indicarán el ángulo deseado para cada servomotor.
+                            <br>Interpretar estos comandos y asignar el valor correspondiente a cada servomotor para lograr el movimiento en el ángulo deseado.</p>
+
+                            <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ard2.png" alt="Código Arduino" /></figure>
+                            <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ard1.png" alt="Código Arduino" /></figure>
+
+
+                        <h1 class="fs-6 mb-4">Conexión y configuración del módulo Bluetooth</h1>
+                        <p class="fs-6 mb-4">Conectar el módulo Bluetooth (HC-05 o HC-06) al Arduino. El pin TX del módulo debe ir al pin RX del Arduino, y el pin RX del módulo al pin TX del Arduino.
+                            <br>Configurar el módulo Bluetooth para que pueda emparejarse con el dispositivo móvil.
+                            <br>Probar la comunicación con el módulo Bluetooth enviando comandos simples y verificando que el Arduino los reciba correctamente.</p>
+    
+                            <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/tinkerblue.jpg" alt="Código Arduino" /></figure>
+
+                        <h1 class="fs-6 mb-4">Desarrollo de la aplicación en MIT App Inventor</h1>
+                        <p class="fs-6 mb-4">Crear una nueva aplicación en MIT App Inventor y diseñar una interfaz sencilla con botones o sliders para controlar el ángulo de cada articulación del brazo.</p>
+                        <p class="fs-6 mb-4">Configurar la funcionalidad de Bluetooth en MIT App Inventor para que la aplicación pueda emparejarse con el módulo Bluetooth.</p>
+                        <p class="fs-6 mb-4">Programar en MIT App Inventor para enviar un comando único cada vez que el usuario ajuste un slider o presione un botón. Este comando debe contener información de cuál servomotor ajustar y el ángulo deseado.</p>
+
+                        <figure align="center" class="mb-4"><img class="img-fluid rounded" width="800px" src="img/imagen.png" alt="Código Arduino" /></figure>
+
+
+                    <figure class="mb-4" align="center"><video width="80%"  controls>
+                        <source src="video/brazo.mp4" type="video/mp4">
+                    </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">El proyecto de control de un brazo robótico MDF con 5 servomotores mediante Bluetooth, usando una aplicación creada en MIT App Inventor, demuestra la efectividad de la integración entre hardware y software en sistemas de control remoto. La aplicación móvil facilita el envío de comandos al Arduino, permitiendo un control preciso y en tiempo real de cada articulación. </p>
+                    </p>
+
+                    
+                    <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Barba, H., & Hernández, A. (2018). Robótica básica: Control de brazos robóticos con Arduino y servomotores. Editorial Alfaomega.</p>
+                        <p class="fs-6 mb-4">Castañeda, L. M., & Montes, A. (2019). Arduino y robótica para principiantes: Una guía paso a paso. Pearson Educación.</p>
+                        <p class="fs-6 mb-4">MIT App Inventor. (2023). App Inventor: Build Apps with Ease. Massachusetts Institute of Technology. Recuperado de https://appinventor.mit.edu/</p>
+                        
+
+                </div>
+            </section>
+        </main>
+
+        <p id="descargables">
+            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+            <p class="fs-6 mb-4">Descargar codigo Arduino Circuito 1: <a href="files/brazo_bluetooth.ino">brazo_bluetooth.ino</a> </p>
+            
+
+
+        <footer class="bg-dark text-white py-3">
+            <div class="container text-center">
+                <small>&copy; 2024 Ibero Puebla. Todos los derechos reservados.</small>
+            </div>
+        </footer>
+    </body>
+</html>
